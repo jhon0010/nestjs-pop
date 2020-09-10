@@ -1,11 +1,12 @@
 import { Module } from "@nestjs/common";
 import { CatsModule } from "./cats/cats.module";
-import { Cat } from "./cats/dtos/cat.dto";
+import { Cat } from "./cats/domain/dtos/cat.dto";
 import { CommonService } from "./common/common.service";
 import { SharedModule } from "./shared/shared.module";
+import { UsersModule } from "./users/users.module";
 
 @Module({
-  imports: [CatsModule, SharedModule],
+  imports: [CatsModule, SharedModule, UsersModule],
 })
 export class AppModule {
   /**

@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { CommonService } from "src/common/common.service";
-import { Cat } from "./dtos/cat.dto";
+import { Cat } from "./domain/dtos/cat.dto";
 import { SharedService } from "src/shared/shared.service";
 
 @Injectable()
